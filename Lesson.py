@@ -12,7 +12,13 @@ class Lesson(object):
     }
 
     def __init__(self):
-        pass
+        self.number = None
+        self.name = None
+        self.lesson_type = None
+        self.audience = None
+        self.professor = None
+        self.group = None
+        self.time = None
 
     def get_number(self):
         return self.number
