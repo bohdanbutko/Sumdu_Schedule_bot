@@ -32,11 +32,11 @@ class Parser(object):
         self.request_url = "http://schedule.sumdu.edu.ua/index/htmlschedule"
         self.lessons = []
 
-    def send_request(self, group):
+    def send_request(self, group_code):
         params = {
             "data[DATE_BEG]": datetime.datetime.now().strftime("%d.%m.%Y"),
             "data[DATE_END]": datetime.datetime.now().strftime("%d.%m.%Y"),
-            "data[KOD_GROUP]": group,
+            "data[KOD_GROUP]": group_code,
             "data[ID_FIO]": 0,
             "data[ID_AUD]": 0,
             "data[PUB_DATE]": "false",
